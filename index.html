@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egao – asystentka na pasku zadań Windows</title>
+<meta name="description" content="Egao – darmowa, polska asystentka głosowa, która mieszka na pasku zadań Windows 10/11.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/animacje-poster.jpg">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="tag">Windows 10 / 11 · wersja 1.1.0 · po polsku</p>
+      <h1>Egao</h1>
+      <p class="lead">Mała asystentka głosowa, która opiera się o pasek zadań jak o biurko. Wita cię po włączeniu komputera, reaguje na <strong>„Hej Egao”</strong>, uruchamia programy i gry, otwiera strony i foldery, pilnuje kalendarza i budzików.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-Instalator-1.1.0-x64.exe">⬇ Pobierz instalator (.exe, ok. 390 MB)</a>
+        <a class="btn" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-1.1.0-portable-x64.zip">Wersja przenośna (.zip, ok. 450 MB)</a>
+      </div>
+      <p class="small">Pliki pochodzą z <a href="https://github.com/stabodecrabo-gif/egao/releases/latest">oficjalnego wydania na GitHubie</a>. Przed uruchomieniem <a href="#sumy">sprawdź sumę kontrolną</a>.</p>
+    </div>
+    <video class="hero-video" src="img/egao-animacje.mp4" poster="img/animacje-poster.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Co potrafi Egao</h2>
+    <div class="cards">
+      <div class="card"><h3>🎙️ „Hej Egao”</h3><p>Rozumie wyłącznie mowę po polsku. Na hasło budzi się i odpowiada „Tak, słucham?”. Bez mikrofonu: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd> i piszesz.</p></div>
+      <div class="card"><h3>👋 Powitanie z imieniem</h3><p>Po starcie Windows macha i mówi „Dzień dobry, [twoje imię], w czym mogę ci dzisiaj pomóc?”.</p></div>
+      <div class="card"><h3>🎮 Programy i gry</h3><p>„Uruchom Spotify”, „włącz Minecrafta” – programy, skróty z pulpitu, gry ze Steama i Epic.</p></div>
+      <div class="card"><h3>🌐 Przeglądarki i strony</h3><p>„Otwórz YouTube w Chrome” – własna lista stron i przeglądarek w ustawieniach. Szuka też informacji w sieci.</p></div>
+      <div class="card"><h3>📁 Foldery</h3><p>„Otwórz folder faktury”, „otwórz pobrane”, „pokaż kosz”.</p></div>
+      <div class="card"><h3>📅 Kalendarz i alarmy</h3><p>„Przypomnij mi za 20 minut”, „co mam w piątek?” – wydarzenia, budziki i drzemka głosem.</p></div>
+      <div class="card"><h3>🧠 Pamięć lokalna</h3><p>Pamięta rozmowy na twoim komputerze, a często używane polecenia wykonuje od razu, bez AI.</p></div>
+      <div class="card"><h3>💤 Żywa postać</h3><p>Mruga, mówi, a po dłuższej ciszy zasypia na stojąco. Chowa się, gdy uruchomisz grę lub film na pełnym ekranie.</p></div>
+      <div class="card"><h3>⚙️ Autostart do wyboru</h3><p>Sam decydujesz, czy Egao włącza się razem z Windowsem, czy uruchamiasz ją ręcznie.</p></div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Jak wygląda</h2>
+    <figure class="wide"><img src="img/postac-stany.webp" alt="Stany postaci Egao: powitanie, bezczynność, słuchanie, mówienie, zasypianie" loading="lazy" width="1600" height="406"><figcaption>Animacje postaci na pasku zadań</figcaption></figure>
+    <div class="row">
+      <figure><img src="img/powitanie.webp" alt="Egao wita użytkownika na pasku zadań" loading="lazy" width="1280" height="720"><figcaption>Powitanie po starcie</figcaption></figure>
+      <figure><img src="img/alarm.webp" alt="Alarm z przyciskiem drzemki" loading="lazy" width="1280" height="720"><figcaption>Alarm z drzemką</figcaption></figure>
+      <figure><img src="img/kalendarz.webp" alt="Okno kalendarza" loading="lazy" width="860" height="680"><figcaption>Kalendarz</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Wymagania</h2>
+    <ul class="list">
+      <li><strong>Windows 10 lub 11, 64-bit (x64).</strong></li>
+      <li>Około <strong>1 GB</strong> wolnego miejsca na dysku.</li>
+      <li><strong>Mikrofon</strong> (do komend głosowych; bez niego można pisać).</li>
+      <li><strong>Microsoft Visual C++ Redistributable (x64)</strong> – jeśli głos Egao się nie odzywa, zainstaluj go ze <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">strony Microsoftu</a>.</li>
+      <li>Internet tylko do AI (Gemini) i wyszukiwania – reszta działa offline.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Instalacja</h2>
+    <h3>Sposób A – instalator (zalecany)</h3>
+    <ol class="list">
+      <li>Pobierz <code>Egao-Instalator-1.1.0-x64.exe</code> i <a href="#sumy">sprawdź sumę SHA256</a>.</li>
+      <li>Uruchom plik i klikaj „Dalej”. Na stronie „Uruchamianie” zdecyduj, czy Egao ma startować razem z Windowsem.</li>
+      <li>Przy pierwszym uruchomieniu wpisz swoje imię i kliknij „Gotowe”.</li>
+      <li>Zezwól na dostęp do mikrofonu i powiedz wyraźnie „Hej Egao”.</li>
+    </ol>
+    <h3>Sposób B – wersja przenośna (.zip)</h3>
+    <ol class="list">
+      <li>Pobierz <code>Egao-1.1.0-portable-x64.zip</code>, kliknij prawym przyciskiem → „Wyodrębnij wszystko…”.</li>
+      <li>Uruchom <code>Zainstaluj.bat</code> (albo od razu <code>Egao\Egao.exe</code> bez instalacji). Szczegóły w pliku <code>CZYTAJ-TO.txt</code>.</li>
+    </ol>
+    <div class="note warn">
+      <h3>🛡️ Ostrzeżenie „System Windows ochronił ten komputer” (SmartScreen)</h3>
+      <p>Egao nie ma płatnego certyfikatu podpisu, więc Windows pokaże niebieskie okno. To normalne dla małych, niepodpisanych programów. Kliknij <strong>„Więcej informacji” → „Uruchom mimo to”</strong>. Zrób to tylko wtedy, gdy suma SHA256 pobranego pliku zgadza się z tą poniżej.</p>
+    </div>
+    <div class="note">
+      <h3>🔑 Darmowy klucz Gemini (opcjonalny)</h3>
+      <p>Do swobodnej rozmowy Egao używa darmowego AI Google Gemini. Klucz utworzysz na <a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a> („Create API key”) i wkleisz w Ustawieniach Egao → „Klucz API”. Bez klucza działają programy, gry, foldery, strony, kalendarz, alarmy i proste wyszukiwanie. Darmowy plan Google ma limity i może wykorzystywać wysłane teksty do ulepszania usług – nie dyktuj haseł ani prywatnych danych.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Prywatność</h2>
+    <ul class="list">
+      <li>🎙️ <strong>Rozpoznawanie mowy i głos Egao działają lokalnie</strong> na twoim komputerze – nagrania nie są nigdzie wysyłane.</li>
+      <li>🧠 Pamięć rozmów, kalendarz i ustawienia zapisują się tylko u ciebie (<code>%APPDATA%\Egao</code>); możesz je wyczyścić w Ustawieniach.</li>
+      <li>🌐 Do internetu trafia wyłącznie <strong>tekst</strong> twojego polecenia wysyłany do Gemini (jeśli dodasz klucz) oraz <strong>zapytania wyszukiwania</strong>.</li>
+      <li>Brak kont, reklam i telemetrii.</li>
+    </ul>
+  </section>
+
+  <section id="sumy">
+    <h2>Sumy kontrolne SHA256</h2>
+    <p>Suma kontrolna pozwala sprawdzić, że pobrany plik jest dokładnie tym, który został opublikowany i nikt go nie podmienił ani nie uszkodził.</p>
+    <table>
+      <tr><th>Plik</th><th>SHA256</th></tr>
+      <tr><td><code>Egao-Instalator-1.1.0-x64.exe</code></td><td><code class="hash">1664e7f00ffee8a9bf362e75bba1a4b02e1db010301dea6658a5a8eaf8aac17f</code></td></tr>
+      <tr><td><code>Egao-1.1.0-portable-x64.zip</code></td><td><code class="hash">52ff232d6a96f582892172f5517647f0f127d2813dacc56842986f77c5f7465f</code></td></tr>
+    </table>
+    <p>Jak sprawdzić w PowerShell (w folderze Pobrane):</p>
+<pre><code>cd $HOME\Downloads
+Get-FileHash .\Egao-Instalator-1.1.0-x64.exe -Algorithm SHA256
+Get-FileHash .\Egao-1.1.0-portable-x64.zip -Algorithm SHA256</code></pre>
+    <p>Wynik w kolumnie <code>Hash</code> musi być identyczny jak w tabeli (wielkość liter nie ma znaczenia). Szybkie porównanie jednym poleceniem:</p>
+<pre><code>(Get-FileHash .\Egao-Instalator-1.1.0-x64.exe).Hash -eq '1664e7f00ffee8a9bf362e75bba1a4b02e1db010301dea6658a5a8eaf8aac17f'</code></pre>
+    <p>Powinno wyświetlić <code>True</code>. Plik <a href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a> jest też dołączony do wydania.</p>
+  </section>
+
+  <section>
+    <h2>Problemy?</h2>
+    <p>To pierwsze wydanie na Windows – jeśli coś nie działa, zajrzyj do pliku dziennika <code>%APPDATA%\Egao\egao.log</code> oraz do sekcji „Rozwiązywanie problemów” w pliku <code>CZYTAJ-TO.txt</code>.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">Egao 1.1.0 · <a href="https://github.com/stabodecrabo-gif/egao/releases">Wszystkie wydania</a></div></footer>
+</body>
+</html>
