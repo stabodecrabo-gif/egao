@@ -12,12 +12,12 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="tag">Windows 10 / 11 · wersja 1.1.1 · po polsku</p>
+      <p class="tag">Windows 10 / 11 · wersja 1.1.2 · po polsku</p>
       <h1>Egao</h1>
       <p class="lead">Mała asystentka głosowa, która opiera się o pasek zadań jak o biurko. Wita cię po włączeniu komputera, reaguje na <strong>„Hej Egao”</strong>, uruchamia programy i gry, otwiera strony i foldery, pilnuje kalendarza i budzików.</p>
       <div class="buttons">
-        <a class="btn primary" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-Instalator-1.1.1-x64.exe">⬇ Pobierz instalator (.exe, ok. 390 MB)</a>
-        <a class="btn" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-1.1.1-portable-x64.zip">Wersja przenośna (.zip, ok. 450 MB)</a>
+        <a class="btn primary" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-Instalator-1.1.2-x64.exe">⬇ Pobierz instalator (.exe, ok. 390 MB)</a>
+        <a class="btn" href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/Egao-1.1.2-portable-x64.zip">Wersja przenośna (.zip, ok. 450 MB)</a>
       </div>
       <p class="small">Pliki pochodzą z <a href="https://github.com/stabodecrabo-gif/egao/releases/latest">oficjalnego wydania na GitHubie</a>. Przed uruchomieniem <a href="#sumy">sprawdź sumę kontrolną</a>.</p>
     </div>
@@ -66,14 +66,14 @@
     <h2>Instalacja</h2>
     <h3>Sposób A – instalator (zalecany)</h3>
     <ol class="list">
-      <li>Pobierz <code>Egao-Instalator-1.1.1-x64.exe</code> i <a href="#sumy">sprawdź sumę SHA256</a>.</li>
+      <li>Pobierz <code>Egao-Instalator-1.1.2-x64.exe</code> i <a href="#sumy">sprawdź sumę SHA256</a>.</li>
       <li>Uruchom plik i klikaj „Dalej”. Na stronie „Uruchamianie” zdecyduj, czy Egao ma startować razem z Windowsem.</li>
       <li>Przy pierwszym uruchomieniu wpisz swoje imię i kliknij „Gotowe”.</li>
       <li>Zezwól na dostęp do mikrofonu i powiedz wyraźnie „Hej Egao”.</li>
     </ol>
     <h3>Sposób B – wersja przenośna (.zip)</h3>
     <ol class="list">
-      <li>Pobierz <code>Egao-1.1.1-portable-x64.zip</code>, kliknij prawym przyciskiem → „Wyodrębnij wszystko…”.</li>
+      <li>Pobierz <code>Egao-1.1.2-portable-x64.zip</code>, kliknij prawym przyciskiem → „Wyodrębnij wszystko…”.</li>
       <li>Uruchom <code>Zainstaluj.bat</code> (albo od razu <code>Egao\Egao.exe</code> bez instalacji). Szczegóły w pliku <code>CZYTAJ-TO.txt</code>.</li>
     </ol>
     <div class="note warn">
@@ -101,20 +101,27 @@
     <p>Suma kontrolna pozwala sprawdzić, że pobrany plik jest dokładnie tym, który został opublikowany i nikt go nie podmienił ani nie uszkodził.</p>
     <table>
       <tr><th>Plik</th><th>SHA256</th></tr>
-      <tr><td><code>Egao-Instalator-1.1.1-x64.exe</code></td><td><code class="hash">e8eb9ba446794ba468c1e9934adc93c1eb987da9387bd5f313a3043620af034f</code></td></tr>
-      <tr><td><code>Egao-1.1.1-portable-x64.zip</code></td><td><code class="hash">da8d98b302b89ced05787576f4df8eb8b78c784652ee62e17326fc1c10b785a3</code></td></tr>
+      <tr><td><code>Egao-Instalator-1.1.2-x64.exe</code></td><td><code class="hash">38931284f17eda2abef8d844c625c65dae85ee1fddf81407b64e94dc45dcaa94</code></td></tr>
+      <tr><td><code>Egao-1.1.2-portable-x64.zip</code></td><td><code class="hash">e5dcd5977906596dbaa3e40c59150c29c8e3f0378c05f46ad769dddf87b51b17</code></td></tr>
     </table>
     <p>Jak sprawdzić w PowerShell (w folderze Pobrane):</p>
 <pre><code>cd $HOME\Downloads
-Get-FileHash .\Egao-Instalator-1.1.1-x64.exe -Algorithm SHA256
-Get-FileHash .\Egao-1.1.1-portable-x64.zip -Algorithm SHA256</code></pre>
+Get-FileHash .\Egao-Instalator-1.1.2-x64.exe -Algorithm SHA256
+Get-FileHash .\Egao-1.1.2-portable-x64.zip -Algorithm SHA256</code></pre>
     <p>Wynik w kolumnie <code>Hash</code> musi być identyczny jak w tabeli (wielkość liter nie ma znaczenia). Szybkie porównanie jednym poleceniem:</p>
-<pre><code>(Get-FileHash .\Egao-Instalator-1.1.1-x64.exe).Hash -eq 'e8eb9ba446794ba468c1e9934adc93c1eb987da9387bd5f313a3043620af034f'</code></pre>
+<pre><code>(Get-FileHash .\Egao-Instalator-1.1.2-x64.exe).Hash -eq '38931284f17eda2abef8d844c625c65dae85ee1fddf81407b64e94dc45dcaa94'</code></pre>
     <p>Powinno wyświetlić <code>True</code>. Plik <a href="https://github.com/stabodecrabo-gif/egao/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a> jest też dołączony do wydania.</p>
   </section>
 
   <section id="zmiany">
     <h2>Zmiany</h2>
+    <h3>1.1.2</h3>
+    <ul>
+      <li>Naprawiony brak głosu: dołączone biblioteki Visual C++ potrzebne syntezatorowi, dźwięk klipów wczytywany z dysku, zapasowy polski głos Windows.</li>
+      <li>Stabilne połączenie z AI: ponawianie z rosnącym odstępem, obsługa przeciążenia i limitów, zapasowe modele, sieć systemu Windows.</li>
+      <li>Wielu darmowych dostawców AI (Gemini, Groq, Cerebras, Mistral, OpenRouter) z automatycznym przełączaniem i przyciskami „Test”.</li>
+      <li>„Test głosu” i „Otwórz folder z logami” w Ustawieniach.</li>
+    </ul>
     <h3>1.1.1</h3>
     <ul>
       <li>Naprawione przezroczyste „dziury” na ciele postaci (skóra, policzki, dłonie): tło jest najpierw zamieniane na niebieskie, a dopiero potem usuwane – tylko tam, gdzie naprawdę jest tłem.</li>
@@ -128,10 +135,10 @@ Get-FileHash .\Egao-1.1.1-portable-x64.zip -Algorithm SHA256</code></pre>
 
   <section>
     <h2>Problemy?</h2>
-    <p>Jeśli coś nie działa, zajrzyj do pliku dziennika <code>%APPDATA%\Egao\egao.log</code> oraz do sekcji „Rozwiązywanie problemów” w pliku <code>CZYTAJ-TO.txt</code>.</p>
+    <p>Jeśli coś nie działa, zajrzyj do pliku dziennika <code>%APPDATA%\Egao\logs\egao.log</code> (Ustawienia → „Otwórz folder z logami”) oraz do sekcji „Rozwiązywanie problemów” w pliku <code>CZYTAJ-TO.txt</code>.</p>
   </section>
 </main>
 
-<footer><div class="wrap">Egao 1.1.1 · <a href="https://github.com/stabodecrabo-gif/egao/releases">Wszystkie wydania</a></div></footer>
+<footer><div class="wrap">Egao 1.1.2 · <a href="https://github.com/stabodecrabo-gif/egao/releases">Wszystkie wydania</a></div></footer>
 </body>
 </html>
